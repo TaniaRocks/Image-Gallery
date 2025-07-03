@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="top-bg">
+    <div class="heading-content">
+        <div class="top-buttons">
+            <button class="top">Explore</button>
+            <button class="top">Log In</button>
+            <button id="join">Join</button>
+            <button id="upload"><i class="fa-solid fa-arrow-up-from-bracket"></i>&nbsp;&nbsp;Upload</button>
+        </div>
+        <h1 class="name">
+            SHOTS
+        </h1>
+        <h1>
+            Stunning royalty-free images & royalty-free stock
+        </h1>
+        <br><br>
+        <ul id="middle">
+            <li>Explore</li>
+            <li>Photos</li>
+            <li>Illustrations</li>
+            <li>Vectors</li>
+            <li>Videos</li>
+            <li>Music</li>
+            <li>Sound Effects</li>
+            <li>GIFs</li>
+        </ul>
+        <div class="search-container">
+            <img class="search-btn" src="magnifying-glass-backup-svgrepo-com.svg">
+            <input type="text" placeholder="search for free Images, Videos, Music & more..." class="search-input">
+        </div>
+        <p class="down-one">
+            Get Free Images
+        </p>
+        <p class="down-two">
+            Read More about the &nbsp;<a href="https://pixabay.com/"> Content License</a>
+        </p>
+    </div>
+    <img id="bg">
+    </div>
+    <div class="full-img" id="fullImgBox">
+        <img src="image-13.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <br>
+    <h3>
+        Over 5.5 million+ high quality stock images, videos and music shared by our talented community.
+    </h3>
+    <div class="img-gallery">
+        <img src="image-1.jpg" onclick="openFullImg(this.src)">
+        <img src="image-2.jpg" onclick="openFullImg(this.src)">
+        <img src="image-3.jpg" onclick="openFullImg(this.src)">
+        <img src="image-4.jpg" onclick="openFullImg(this.src)">
+        <img src="image-5.jpg" onclick="openFullImg(this.src)">
+        <img src="image-6.jpg" onclick="openFullImg(this.src)">
+        <img src="image-7.jpg" onclick="openFullImg(this.src)">
+        <img src="image-8.jpg" onclick="openFullImg(this.src)">
+        <img src="image-9.jpg" onclick="openFullImg(this.src)">
+        <img src="image-10.jpg" onclick="openFullImg(this.src)">
+        <img src="image-11.jpg" onclick="openFullImg(this.src)">
+        <img src="image-12.jpg" onclick="openFullImg(this.src)">
+        <img src="image-13.jpg" onclick="openFullImg(this.src)">
+        <img src="image-14.jpg" onclick="openFullImg(this.src)">
+        <img src="image-15.jpg" onclick="openFullImg(this.src)">
+        <img src="image-16.jpg" onclick="openFullImg(this.src)">
+        <img src="image-17.jpg" onclick="openFullImg(this.src)">
+        <img src="image-18.jpg" onclick="openFullImg(this.src)">
+    </div>
+<div class="last-one">
+    <i class="fa-solid fa-heart"></i>
+    <table>
+        <tbody>
+            <tr id="free">
+                <td>Free media you can use anywhere</td>
+            </tr>
+            <tr>
+                <td>Pixabay is a vibrant community of creatives, sharing royalty-free images, videos, audio and other media. All content is released by Pixabay under the Content License, which makes it safe to use without asking for permission or giving credit to the artist - even for certain commercial purposes.</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="learn">Learn more about our license</button>
+</div>
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-top">
+            <div class="comp-sign">
+                <a class="logo-link">Shots</a>
+                <p class="filler-text">Over 5.5 million+ high quality stock images, videos and music shared by our talented community.</p>
+            </div>
+            <div class="socials">
+                <a class="social-link">
+                    <img src="instagram-logo-facebook-2-svgrepo-com.svg" class="social-icon">
+                </a>
+                <a class="social-link">
+                    <img src="linkedin-svgrepo-com (1).svg" class="social-icon">
+                </a>
+                <a class="social-link">
+                    <img src="twitter-logo-shape-svgrepo-com.svg" class="social-icon">
+                </a>
+                <a class="social-link">
+                    <img src="github-142-svgrepo-com.svg" class="social-icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer-grid">
+            <div class="footer-grid-column">
+                <div class="footer-grid-heading">
+                    Discover
+                </div>
+                <ul class="footer-links-list">
+                    <a class="footer-link">Editor's Choice</a>
+                    <a class="footer-link">Curated Collections</a>
+                    <a class="footer-link">Shots Radio</a>
+                    <a class="footer-link">Popular Music</a>
+                    <a class="footer-link">Popular Searches</a>
+                    <a class="footer-link">Popular Images</a>
+                </ul>
+            </div>
+            <div class="footer-grid-column">
+                <div class="footer-grid-heading">
+                    Community
+                </div>
+                <ul class="footer-links-list">
+                    <a class="footer-link">Blog</a>
+                    <a class="footer-link">Forum</a>
+                    <a class="footer-link">Creators</a>
+                </ul>
+            </div>
+            <div class="footer-grid-column">
+                <div class="footer-grid-heading">
+                    About
+                </div>
+                <ul class="footer-links-list">
+                    <a class="footer-link">About Us</a>
+                    <a class="footer-link">FAQ</a>
+                    <a class="footer-link">License Summary</a>
+                    <a class="footer-link">Terms of Service</a>
+                    <a class="footer-link">Cookies Policy</a>
+                    <a class="footer-link">Digital Services Act</a>
+                    <a class="footer-link">API</a>
+                    <a class="footer-link">Report Content</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-copyright">
+        &copy; 2025 - Present Shots. All rights reserved.
+    </div>
+
+
+</div>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+</script>
+</body>
+</html>
